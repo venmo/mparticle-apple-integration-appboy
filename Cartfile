@@ -1,2 +1,3 @@
-github "Appboy/appboy-ios-sdk" ~> 3.20
-github "mparticle/mparticle-apple-sdk" ~> 7.12
+# Disable Carthage dependencies as shared dependency resolution with Submodules is breaking our integration
+# github "Appboy/appboy-ios-sdk" ~> 3.20
+# github "mparticle/mparticle-apple-sdk" ~> 7.12
