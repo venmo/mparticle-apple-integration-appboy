@@ -24,7 +24,7 @@ let package = Package(
             name: "mParticle-Appboy",
             dependencies: [
                 "mParticle-Apple-SDK",
-                "Appboy_iOS_SDK"
+                "AppboyKit"
             ],
             path: "mParticle-Appboy",
             exclude: [
