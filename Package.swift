@@ -15,18 +15,21 @@ let package = Package(
       .package(name: "mParticle-Apple-SDK",
                url: "https://github.com/mParticle/mparticle-apple-sdk",
                .upToNextMajor(from: "8.0.0")),
-      .package(name: "Appboy-iOS-SDK",
+      .package(name: "Appboy_iOS_SDK",
                url: "https://github.com/Appboy/appboy-ios-sdk",
-               .upToNextMajor(from: "3.27.0")),
+               .upToNextMajor(from: "3.32.0")),
     ],
     targets: [
         .target(
             name: "mParticle-Appboy",
             dependencies: [
                 "mParticle-Apple-SDK",
-                "Appboy-iOS-SDK"
+                "Appboy_iOS_SDK"
             ],
             path: "mParticle-Appboy",
+            exclude: [
+                "Info.plist"
+            ],
             publicHeadersPath: "."
         )
     ],
