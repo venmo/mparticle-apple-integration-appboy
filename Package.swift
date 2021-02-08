@@ -15,7 +15,7 @@ let package = Package(
       .package(name: "mParticle-Apple-SDK",
                url: "https://github.com/mParticle/mparticle-apple-sdk",
                .upToNextMajor(from: "8.0.0")),
-      .package(name: "Adjust",
+      .package(name: "Appboy-iOS-SDK",
                url: "https://github.com/Appboy/appboy-ios-sdk",
                .upToNextMajor(from: "3.27.0")),
     ],
@@ -24,7 +24,7 @@ let package = Package(
             name: "mParticle-Appboy",
             dependencies: [
                 "mParticle-Apple-SDK",
-                "Appboy_iOS_SDK"
+                "Appboy-iOS-SDK"
             ],
             path: "mParticle-Appboy",
             publicHeadersPath: "."
