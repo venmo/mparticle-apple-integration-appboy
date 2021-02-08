@@ -5,7 +5,10 @@ import PackageDescription
 
 let package = Package(
     name: "mParticle-Appboy",
-    platforms: [ .iOS(.v9), .tvOS(.v9) ],
+    platforms: [
+        .iOS(.v9),
+        .tvOS(.v9)
+    ],
     products: [
         .library(
             name: "mParticle-Appboy",
@@ -24,7 +27,7 @@ let package = Package(
             name: "mParticle-Appboy",
             dependencies: [
                 "mParticle-Apple-SDK",
-                "AppboyKit"
+                .product(name: "AppboyKit", package: "Appboy_iOS_SDK")
             ],
             path: "mParticle-Appboy",
             exclude: [
